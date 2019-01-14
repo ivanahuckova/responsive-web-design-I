@@ -83,7 +83,19 @@ hr {
     margin: 0;
 } 
 
+.margin-top-5 {
+	margin-top: 5%;
+}
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+
 /* NAVBAR */
+
+.nav-monitor-display-none {
+    display:none;
+}
 .navbar {
 	display: flex;
 	justify-content: space-between;
@@ -103,13 +115,6 @@ hr {
 .navbar div.logo {
 	width: 20%;
 	text-align: right;
-}
-.margin-top-5 {
-	margin-top: 5%;
-}
-.container {
-	display: flex;
-	justify-content: space-between;
 }
 
 /*INDEX CSS*/
@@ -240,6 +245,17 @@ img.full-length-img {
         margin: 0;
     }
     /*NAVBAR - MOBILE*/
+
+    .navbar div.navigation {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: inline-block;
+        margin: 5%;
+        border-bottom: 1px solid black;
+        font-weight: bold;
+    }
     .navbar div.navigation {
         width: 100%;
         flex-direction: column;
