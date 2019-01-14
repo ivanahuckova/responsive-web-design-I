@@ -58,49 +58,7 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
-/* CSS FOR ALL PARTS OF WEBSITE*/
-.margin-top-5 {
-	margin-top: 5%;
-}
-
-.margin-bottom-5 {
-	margin-bottom: 5%;
-}
-
-.margin0 {
-	margin: 0;
-}
-
-.right-align {
-	text-align: right;
-}
-
-.container {
-	display: flex;
-	justify-content: space-between;
-}
-.main-container {
-	margin: 10px 10%;
-}
-
-.copyright {
-	margin: 7% 0 5% 0;
-	text-align: center;
-}
-
-.two-flex-boxes {
-	flex: 0.47;
-}
-
-.three-flex-boxes {
-	flex: 0.3;
-}
-
-img.full-length-img {
-	width: 100%;
-}
+/* CODE */
 
 p {
 	line-height: 1.25;
@@ -113,7 +71,12 @@ a {
 }
 
 hr {
-	margin-top: 5%;
+    margin-top: 5%;
+    border: 1px solid black;
+}
+
+.main-container {
+	margin: 10px 10%;
 }
 
 /* NAVBAR */
@@ -125,7 +88,7 @@ hr {
 }
 
 .navbar div.navigation {
-	flex: 0.7;
+	width: 70%;
 	display: flex;
 	justify-content: space-between;
 }
@@ -135,18 +98,24 @@ hr {
 }
 
 .navbar div.logo {
-	flex: 0.2;
+	width: 20%;
 	text-align: right;
 }
+.margin-top-5 {
+	margin-top: 5%;
+}
 
-/*INDEX HTML SPECIFIC CSS */
+.container {
+	display: flex;
+	justify-content: space-between;
+}
 
 .index-top-container {
 	align-items: center;
 }
 
 .index-top-container div.landing-container {
-	flex: 0.5;
+	width: 50%;
 	text-align: center;
 }
 
@@ -166,135 +135,26 @@ hr {
 	flex-direction: column;
 }
 
+.two-flex-boxes {
+	width: 47%;
+}
+
 .index-content-section div.middle-img {
 	align-self: stretch;
 	margin: 5% 0;
 }
 
-/*SERVICES HTML SPECIFIC CSS*/
-
-.services-content-container {
-	flex-wrap: wrap;
-}
-
-.services-content-container .card {
-	border: 1px solid black;
-	background-color: #D4D4D4;
-	padding: 20px;
-	max-width: 47%;
-}
-
-.services-content-container .card a {
-	background-color: white;
-	padding: 5px 25px;
-	border-radius: 5px;
-	border: 1px solid black;
-	text-decoration: none;
-	color: black;
-	font-size: 0.7rem;
-}
-
-.two-flex-boxes ul {
-	list-style-type: square;
-	list-style-position: inside;
-	padding-top: 10px;
-	line-height: 2;
-}
-
-/*PRODUCT HTML SPECIFIC CSS*/
-
-.img-radius {
+img.full-length-img {
 	width: 100%;
-	border-radius: 5px
 }
 
-div.photo {
-	flex: 15%;
-	max-width: 15%
+.three-flex-boxes {
+	width: 33%;
 }
 
-div.photo5 {
-	margin-top: 5%;
-}
-
-div.photo2 {
-	margin-top: 2%;
-}
-
-div.photo-2 {
-	margin-top: -2%;
-}
-
-div.photo3 {
-	margin-top: 3%;
-}
-
-div.product-example-image-container {
-	flex: 45%;
-	max-width: 45%;
-}
-
-
-div.product-example-text-container {
-	flex: 43%;
-	max-width: 47.5%;
-}
-
-.card a.button-animation:hover {
-	animation-name: color;
-	animation-duration: 3000ms;
-}
-
-@keyframes color {
-	10% {
-		background-color: red;
-		color: white
-	}
-
-	20% {
-		background-color: white;
-		color: black;
-	}
-
-	30% {
-		background-color: red;
-		color: white
-	}
-
-	40% {
-		background-color: white;
-		color: black;
-	}
-
-	50% {
-		background-color: red;
-		color: white
-	}
-
-	60% {
-		background-color: white;
-		color: black;
-	}
-
-	70% {
-		background-color: red;
-		color: white
-	}
-
-	80% {
-		background-color: white;
-		color: black;
-	}
-
-	90% {
-		background-color: red;
-		color: white
-	}
-
-	100% {
-		background-color: white;
-		color: black;
-	}
+.copyright {
+	margin: 3% 0;
+	text-align: center;
 }
 
 /*MEDIA QUERIES*/
@@ -314,27 +174,29 @@ div.product-example-text-container {
         width: 100%;
     }
     
-    .display-none {
-        display:none;
+    .mobile-tablet-display-none {
+        display: none;
     }
 
     .index-top-container {
-        margin: 9% 0 10.5% 0;
-        align-items: center;
+        margin: 10% 0;
         justify-content: center;
     }
 
     .index-top-container h1{
-        margin-bottom: 9%;
-    }
-
-    .copyright {
-        margin: 3% 0 3% 0;
-        text-align: center;
+        margin-bottom: 10%;
     }
 }
 
 @media (max-width: 600px) {
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p, address, .copyright {
+        font-size: 1.1rem;
+    }
 
     .main-container {
         margin: 0;
@@ -357,79 +219,50 @@ div.product-example-text-container {
         font-size: 1.4rem;
     }
 
-    .index-top-container div.landing-container h1 {
-        font-size: 5rem;
-        padding-top: 3%;
+    .navbar .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .index-top-container {
+        margin: 10% 0 18% 0;
     }
 
     .index-top-container div.landing-container a {
         font-size: 1.1rem;
-        padding: 1.45% 16%;
+        padding: 2% 16%;
     }
 
     hr.hr-mobile {
-        border: 1px solid black;
-        margin: 0 2%;
+        margin: 0 3%;
     }
 
-    .index-top-container {
-        margin: 9% 0 17% 0;
-    }
-
-    .container {
-        display: flex;
+    .container-mobile {
         flex-direction: column;
-        margin-left: 1.5%;
-        margin-right: 1.5%;
-    }
+        margin: 0 3%;
+    } 
 
     .two-flex-boxes {
         width: 100%;
-        margin: 7.5% 0 7.5% 0;
-    }
-
-    .two-flex-boxes {
-        width: 100%;
-        margin: 7.5% 0 2% 0;
-    }
-
-    .two-flex-boxes h2 {
-        font-size: 1.1rem;
-    }
-
-    .two-flex-boxes p {
-        font-size: 1.1rem;
+        margin: 5% 0;
     }
 
     img.full-length-img {
-        margin-top: 4%;
-        margin-bottom: 0;
+        width: 93.5%;
+        margin: 0 3%;
     }
 
     .three-flex-boxes {
         width: 100%;
-        margin: 1% 0 13% 0;
-    }
-
-    .three-flex-boxes:last-child {
-        margin-bottom: 7%;
-    }
-
-    .three-flex-boxes h2 {
-        font-size: 1.1rem;
-    }
-    .three-flex-boxes p {
-        font-size: 1.1rem;
+        margin: 10% 0;
     }
 
     .address {
-        margin: 7% 2.5% 7% 2.5%;
-        font-size: 1.1rem;
+        margin: 10% 3%;
 
     }
-
     .copyright {
-        margin: 0;
-        font-size: 1.1rem;
+        margin: 3% 0;
     }
 }
