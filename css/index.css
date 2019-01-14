@@ -79,8 +79,11 @@ hr {
 	margin: 10px 10%;
 }
 
-/* NAVBAR */
+.margin-0 {
+    margin: 0;
+} 
 
+/* NAVBAR */
 .navbar {
 	display: flex;
 	justify-content: space-between;
@@ -104,12 +107,12 @@ hr {
 .margin-top-5 {
 	margin-top: 5%;
 }
-
 .container {
 	display: flex;
 	justify-content: space-between;
 }
 
+/*INDEX CSS*/
 .index-top-container {
 	align-items: center;
 }
@@ -157,6 +160,40 @@ img.full-length-img {
 	text-align: center;
 }
 
+/*SERVICES CSS*/
+
+.services-content-container {
+	flex-wrap: wrap;
+}
+
+.margin-bottom-5 {
+    margin-bottom: 5%;
+}
+
+.services-content-container .card {
+	border: 1px solid black;
+	background-color: #D4D4D4;
+	padding: 20px;
+    width: 47%;
+}
+
+.services-content-container .card a {
+	background-color: white;
+	padding: 5px 25px;
+	border-radius: 5px;
+	border: 1px solid black;
+	text-decoration: none;
+	color: black;
+	font-size: 0.7rem;
+}
+
+.two-flex-boxes ul {
+	list-style-type: square;
+	list-style-position: inside;
+	padding-top: 10px;
+	line-height: 2;
+}
+
 /*MEDIA QUERIES*/
 
 @media (max-width: 900px) {
@@ -164,7 +201,12 @@ img.full-length-img {
     .main-container {
         margin: 3.5% 3.5%;
     }
-    
+
+    .mobile-tablet-display-none {
+        display: none;
+    }
+
+    /*NAVBAR - TABLET*/
     .navbar {
         flex-direction: column-reverse;
     }
@@ -173,11 +215,7 @@ img.full-length-img {
         margin-top: 3%;
         width: 100%;
     }
-    
-    .mobile-tablet-display-none {
-        display: none;
-    }
-
+    /*INDEX - MOBILE*/
     .index-top-container {
         margin: 10% 0;
         justify-content: center;
@@ -201,7 +239,7 @@ img.full-length-img {
     .main-container {
         margin: 0;
     }
-
+    /*NAVBAR - MOBILE*/
     .navbar div.navigation {
         width: 100%;
         flex-direction: column;
@@ -225,8 +263,9 @@ img.full-length-img {
         align-items: center;
     }
 
+    /*INDEX - MOBILE*/
     .index-top-container {
-        margin: 10% 0 18% 0;
+        margin: 10% 0 15% 0;
     }
 
     .index-top-container div.landing-container a {
@@ -265,4 +304,28 @@ img.full-length-img {
     .copyright {
         margin: 3% 0;
     }
+
+    /*SERVICES - MOBILE*/
+    img.margin-top-5 {
+        margin-top: 5%;
+    }
+
+    section.services-text-mobile {
+        margin: 5% 3%;
+    }
+
+    .services-content-container .card {
+        width: 93.5%;
+        margin: 3%;
+    }
+
+    hr.mobile-margin-top-5 {
+        margin-top: 5%;
+    }
+
+    .mobile-flex-wrap-reverse {
+        flex-wrap: wrap-reverse;
+        margin: 5% 3%;
+    }
+
 }
