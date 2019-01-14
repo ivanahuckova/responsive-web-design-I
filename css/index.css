@@ -335,9 +335,6 @@ div.product-example-text-container {
 }
 
 @media (max-width: 600px) {
-    body {
-        background: lightblue;
-    }
 
     .main-container {
         margin: 0;
@@ -360,7 +357,79 @@ div.product-example-text-container {
         font-size: 1.4rem;
     }
 
-    .index-top-container h1{
-        margin-bottom: 9%;
+    .index-top-container div.landing-container h1 {
+        font-size: 5rem;
+        padding-top: 3%;
+    }
+
+    .index-top-container div.landing-container a {
+        font-size: 1.1rem;
+        padding: 1.45% 16%;
+    }
+
+    hr.hr-mobile {
+        border: 1px solid black;
+        margin: 0 2%;
+    }
+
+    .index-top-container {
+        margin: 9% 0 17% 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+    }
+
+    .two-flex-boxes {
+        width: 100%;
+        margin: 7.5% 0 7.5% 0;
+    }
+
+    .two-flex-boxes {
+        width: 100%;
+        margin: 7.5% 0 2% 0;
+    }
+
+    .two-flex-boxes h2 {
+        font-size: 1.1rem;
+    }
+
+    .two-flex-boxes p {
+        font-size: 1.1rem;
+    }
+
+    img.full-length-img {
+        margin-top: 4%;
+        margin-bottom: 0;
+    }
+
+    .three-flex-boxes {
+        width: 100%;
+        margin: 1% 0 13% 0;
+    }
+
+    .three-flex-boxes:last-child {
+        margin-bottom: 7%;
+    }
+
+    .three-flex-boxes h2 {
+        font-size: 1.1rem;
+    }
+    .three-flex-boxes p {
+        font-size: 1.1rem;
+    }
+
+    .address {
+        margin: 7% 2.5% 7% 2.5%;
+        font-size: 1.1rem;
+
+    }
+
+    .copyright {
+        margin: 0;
+        font-size: 1.1rem;
     }
 }
