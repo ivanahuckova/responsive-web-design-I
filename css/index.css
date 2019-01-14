@@ -159,7 +159,7 @@ img.full-length-img {
 
 /*MEDIA QUERIES*/
 
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
     
     .main-container {
         margin: 3.5% 3.5%;
