@@ -159,7 +159,7 @@ hr {
 	text-decoration: none;
 	color: black;
 	border: 1px solid black;
-	padding: 5px 25px;
+	padding: 3px 40px;
 }
 
 .index-content-section {
@@ -310,13 +310,33 @@ div.product-example-text-container {
     }
     
     .navbar div.navigation {
-        margin-top: 2%;
+        margin-top: 4%;
         width: 100%;
     }
     
     .navbar div.logo {
         margin-top: 2%;
     }
+    
+    .display-none {
+        display:none;
+    }
+
+    .index-top-container {
+        margin: 8% 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .index-top-container h1{
+        margin-bottom: 7%;
+    }
+
+    .copyright {
+        margin: 3% 0 3% 0;
+        text-align: center;
+    }
+
     
 
 
