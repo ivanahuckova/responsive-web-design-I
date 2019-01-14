@@ -1,3 +1,325 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* CSS FOR ALL PARTS OF WEBSITE*/
+.margin-top-5 {
+	margin-top: 5%;
+}
+
+.margin-bottom-5 {
+	margin-bottom: 5%;
+}
+
+.margin0 {
+	margin: 0;
+}
+
+.right-align {
+	text-align: right;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+.main-container {
+	margin: 10px 10%;
+}
+
+.copyright {
+	margin: 7% 0 5% 0;
+	text-align: center;
+}
+
+.two-flex-boxes {
+	flex: 0.47;
+}
+
+.three-flex-boxes {
+	flex: 0.3;
+}
+
+img.full-length-img {
+	width: 100%;
+}
+
+p {
+	line-height: 1.25;
+}
+
+a {
+	text-decoration: none;
+	line-height: 1.25;
+	color: black;
+}
+
+hr {
+	margin-top: 5%;
+}
+
+/* NAVBAR */
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar div.navigation {
+	flex: 0.7;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navbar div.navigation a {
+	color: gray;
+}
+
+.navbar div.logo {
+	flex: 0.2;
+	text-align: right;
+}
+
+/*INDEX HTML SPECIFIC CSS */
+
+.index-top-container {
+	align-items: center;
+}
+
+.index-top-container div.landing-container {
+	flex: 0.5;
+	text-align: center;
+}
+
+.index-top-container div.landing-container h1 {
+	font-size: 4rem;
+	text-align: center;
+}
+
+.index-top-container div.landing-container a {
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	padding: 5px 25px;
+}
+
+.index-content-section {
+	flex-direction: column;
+}
+
+.index-content-section div.middle-img {
+	align-self: stretch;
+	margin: 5% 0;
+}
+
+/*SERVICES HTML SPECIFIC CSS*/
+
+.services-content-container {
+	flex-wrap: wrap;
+}
+
+.services-content-container .card {
+	border: 1px solid black;
+	background-color: #D4D4D4;
+	padding: 20px;
+	max-width: 47%;
+}
+
+.services-content-container .card a {
+	background-color: white;
+	padding: 5px 25px;
+	border-radius: 5px;
+	border: 1px solid black;
+	text-decoration: none;
+	color: black;
+	font-size: 0.7rem;
+}
+
+.two-flex-boxes ul {
+	list-style-type: square;
+	list-style-position: inside;
+	padding-top: 10px;
+	line-height: 2;
+}
+
+/*PRODUCT HTML SPECIFIC CSS*/
+
+.img-radius {
+	width: 100%;
+	border-radius: 5px
+}
+
+div.photo {
+	flex: 15%;
+	max-width: 15%
+}
+
+div.photo5 {
+	margin-top: 5%;
+}
+
+div.photo2 {
+	margin-top: 2%;
+}
+
+div.photo-2 {
+	margin-top: -2%;
+}
+
+div.photo3 {
+	margin-top: 3%;
+}
+
+div.product-example-image-container {
+	flex: 45%;
+	max-width: 45%;
+}
 
 
+div.product-example-text-container {
+	flex: 43%;
+	max-width: 47.5%;
+}
+
+.card a.button-animation:hover {
+	animation-name: color;
+	animation-duration: 3000ms;
+}
+
+@keyframes color {
+	10% {
+		background-color: red;
+		color: white
+	}
+
+	20% {
+		background-color: white;
+		color: black;
+	}
+
+	30% {
+		background-color: red;
+		color: white
+	}
+
+	40% {
+		background-color: white;
+		color: black;
+	}
+
+	50% {
+		background-color: red;
+		color: white
+	}
+
+	60% {
+		background-color: white;
+		color: black;
+	}
+
+	70% {
+		background-color: red;
+		color: white
+	}
+
+	80% {
+		background-color: white;
+		color: black;
+	}
+
+	90% {
+		background-color: red;
+		color: white
+	}
+
+	100% {
+		background-color: white;
+		color: black;
+	}
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1200px) {
+    
+    .main-container {
+        margin: 10px 3%;
+    }
+    
+    .navbar {
+        flex-direction: column-reverse;
+    }
+    
+    .navbar div.navigation {
+        margin-top: 2%;
+        width: 100%;
+    }
+    
+    .navbar div.logo {
+        margin-top: 2%;
+    }
+    
+
+
+
+
+}
