@@ -1,3 +1,331 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
 
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* CODE */
+
+p {
+	line-height: 1.25;
+}
+
+a {
+	text-decoration: none;
+	line-height: 1.25;
+	color: black;
+}
+
+hr {
+    margin-top: 5%;
+    border: 1px solid black;
+}
+
+.main-container {
+	margin: 10px 10%;
+}
+
+.margin-0 {
+    margin: 0;
+} 
+
+/* NAVBAR */
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar div.navigation {
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navbar div.navigation a {
+	color: gray;
+}
+
+.navbar div.logo {
+	width: 20%;
+	text-align: right;
+}
+.margin-top-5 {
+	margin-top: 5%;
+}
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+
+/*INDEX CSS*/
+.index-top-container {
+	align-items: center;
+}
+
+.index-top-container div.landing-container {
+	width: 50%;
+	text-align: center;
+}
+
+.index-top-container div.landing-container h1 {
+	font-size: 4rem;
+	text-align: center;
+}
+
+.index-top-container div.landing-container a {
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	padding: 3px 40px;
+}
+
+.index-content-section {
+	flex-direction: column;
+}
+
+.two-flex-boxes {
+	width: 47%;
+}
+
+.index-content-section div.middle-img {
+	align-self: stretch;
+	margin: 5% 0;
+}
+
+img.full-length-img {
+	width: 100%;
+}
+
+.three-flex-boxes {
+	width: 33%;
+}
+
+.copyright {
+	margin: 3% 0;
+	text-align: center;
+}
+
+/*SERVICES CSS*/
+
+.services-content-container {
+	flex-wrap: wrap;
+}
+
+.margin-bottom-5 {
+    margin-bottom: 5%;
+}
+
+.services-content-container .card {
+	border: 1px solid black;
+	background-color: #D4D4D4;
+	padding: 20px;
+    width: 47%;
+}
+
+.services-content-container .card a {
+	background-color: white;
+	padding: 5px 25px;
+	border-radius: 5px;
+	border: 1px solid black;
+	text-decoration: none;
+	color: black;
+	font-size: 0.7rem;
+}
+
+.two-flex-boxes ul {
+	list-style-type: square;
+	list-style-position: inside;
+	padding-top: 10px;
+	line-height: 2;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 900px) {
+    
+    .main-container {
+        margin: 3.5% 3.5%;
+    }
+
+    .mobile-tablet-display-none {
+        display: none;
+    }
+
+    /*NAVBAR - TABLET*/
+    .navbar {
+        flex-direction: column-reverse;
+    }
+    
+    .navbar div.navigation {
+        margin-top: 3%;
+        width: 100%;
+    }
+    /*INDEX - MOBILE*/
+    .index-top-container {
+        margin: 10% 0;
+        justify-content: center;
+    }
+
+    .index-top-container h1{
+        margin-bottom: 10%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p, address, .copyright {
+        font-size: 1.1rem;
+    }
+
+    .main-container {
+        margin: 0;
+    }
+    /*NAVBAR - MOBILE*/
+    .navbar div.navigation {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+        border-top: 1px solid gray;
+    }
+
+    .navbar div.navigation a {
+        height: 8.5vh;
+        width: 100%;
+        border-bottom: 1px solid gray;
+        text-align: center;
+        padding: 2.5vh;
+        font-size: 1.4rem;
+    }
+
+    .navbar .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*INDEX - MOBILE*/
+    .index-top-container {
+        margin: 10% 0 15% 0;
+    }
+
+    .index-top-container div.landing-container a {
+        font-size: 1.1rem;
+        padding: 2% 16%;
+    }
+
+    hr.hr-mobile {
+        margin: 0 3%;
+    }
+
+    .container-mobile {
+        flex-direction: column;
+        margin: 0 3%;
+    } 
+
+    .two-flex-boxes {
+        width: 100%;
+        margin: 5% 0;
+    }
+
+    img.full-length-img {
+        width: 93.5%;
+        margin: 0 3%;
+    }
+
+    .three-flex-boxes {
+        width: 100%;
+        margin: 5% 0;
+    }
+
+    .address {
+        margin: 10% 3%;
+
+    }
+    .copyright {
+        margin: 3% 0;
+    }
+
+    /*SERVICES - MOBILE*/
+    img.margin-top-5 {
+        margin-top: 5%;
+    }
+
+    section.services-text-mobile {
+        margin: 5% 3%;
+    }
+
+    .services-content-container .card {
+        width: 93.5%;
+        margin: 3%;
+    }
+
+    hr.mobile-margin-top-5 {
+        margin-top: 5%;
+    }
+
+    .mobile-flex-wrap-reverse {
+        flex-wrap: wrap-reverse;
+        margin: 5% 3%;
+    }
+
+}
